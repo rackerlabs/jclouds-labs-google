@@ -39,9 +39,9 @@ public class LicenseApiLiveTest extends BaseGoogleComputeEngineApiLiveTest {
    public void testGetLicense() {
       License license = api().get(LICENSE);
       assertNotNull(license);
-      assertEquals(license.name(), LICENSE);
+      assertEquals(license.getName(), LICENSE);
       URI selfLink = URI.create("https://www.googleapis.com/compute/v1/projects/" +
             PROJECT + "/global/licenses/" + LICENSE);
-      assertEquals(license.selfLink(), selfLink);
+      assertEquals(license.getSelfLink(), selfLink);
    }
 }

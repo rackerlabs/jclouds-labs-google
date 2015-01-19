@@ -26,9 +26,9 @@ import com.google.auto.value.AutoValue;
 @AutoValue
 public abstract class License {
 
-   public abstract URI selfLink();
-   public abstract String name();
-   public abstract boolean chargesUseFee();
+   public abstract URI getSelfLink();
+   public abstract String getName();
+   public abstract boolean getChargesUseFee();
 
    @SerializedNames({"selfLink", "name", "chargesUseFee"})
    public static License create(URI selfLink, String name, boolean chargesUseFee) {
